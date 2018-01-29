@@ -1,0 +1,58 @@
+/* 1px solid black */
+#add_form, .form_input, #comment_form {
+	border: 1px solid black;
+}
+
+/* form for adding a new image */
+
+#add_form {
+	margin-bottom: 16px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% auto;
+	padding: 8px;
+}
+
+#add_form #image_url {
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+#add_form #submit_btn {
+	justify-self: end;
+	grid-column-start: 2;
+	width: initial;
+	border: 0px;
+}
+
+.form_input {
+	margin: 8px;
+	padding: 8px;
+	font-size: 18px;
+}
+
+/* form for posting a comment */
+
+#comment_form {
+	margin-bottom: 16px;
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+}
+
+#form_title {
+	margin-top: 36px;
+	padding: 16px;
+	font-size: 20px;
+	width: 100%;
+}
+
+#comment_form textarea {
+	height: 90px;
+}
+
+#comment_form #comment_btn {
+	margin-left: auto;
+	border: 0px;
+}
+

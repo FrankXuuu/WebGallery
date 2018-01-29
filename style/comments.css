@@ -1,0 +1,71 @@
+#comments_title {
+	margin-top: 36px;
+	font-size: 32px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid grey;
+}
+
+#comments {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
+}
+
+.no_comments {
+	margin: 12px 8px 12px 8px;
+	text-align: center;
+}
+
+.comment{
+	margin: 12px 8px 12px 8px;
+	display: grid;
+	grid-template-columns: 20px auto 12px;
+	grid-template-rows: auto;
+	align-items: center;
+	grid-column-gap: 10px; 
+	grid-row-gap: 5px;
+}
+
+.comment .comment_content {
+	grid-column-start: 2;
+}
+
+.comment .comment_user {
+	grid-column-start: 2;
+	font-size: 20px;
+}
+
+.comment .comment_user .date {
+	color: #33ccff;
+	font-size: 14px;
+}
+
+.comment .msg_icon {
+	background: url("../media/envelope.png");
+	height: 20px;
+	background-size: 20px 20px; 
+}
+
+.comment .delete_comment {
+	background: url("../media/delete.png");
+	align-self: center;
+	height: 12px;
+	background-size: 12px 12px; 
+}
+
+.comment .delete_comment:hover {
+	background: url("../media/delete_hov.png");
+	height: 12px;
+	background-size: 12px 12px; 
+}
+
+#comments_footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+#comments_footer button {
+	padding: 5px 10px 5px 10px;
+	font-size: 14px;
+}

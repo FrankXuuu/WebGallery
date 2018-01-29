@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link href="media/favicon.png" rel="icon" type="image/gif">
+	<link href="style/main.css" rel="stylesheet" type="text/css" />
+	<link href="style/form.css" rel="stylesheet" type="text/css" />
+	<link href="style/gallery.css" rel="stylesheet" type="text/css" />
+	<link href="style/comments.css" rel="stylesheet" type="text/css" />
+	<script src="js/script.js"></script>
+	<script src="js/api.js"></script>
+</head>
+<body>
+	<header>
+		<h1>The Web <span>Gallery</span></h1>
+		<button id="add_btn" class="btn" >New Image</button>
+	</header>
+
+	<div id="content_container">
+		<form id="add_form">
+			<input type="text" id="image_title" name="image_title" class="form_input" placeholder="Image Title" required/>
+			<input type="text" id="image_author" name="author_name" class="form_input" placeholder="Author Name" required/>
+			<input type="text" id="image_url" name="image_url" class="form_input" id="image_url" placeholder="Image URL" require/>
+			<input type="submit" name="submit_button" class="btn form_input" id="submit_btn" value="Add" />
+		</form>
+
+		<div id="gallery_container">
+			<div id="gallery">
+			</div>
+
+			<button id="form_title" class="btn">Post a comment</button>
+			<form id="comment_form">
+				<input type="text" id="comment_user" class="form_input" placeholder="Enter your name" name="user_name" required/>
+				<textarea id="comment_content" class="form_input" placeholder="Enter your comment" required></textarea>
+				<input type="submit" class="form_input btn" id="comment_btn" value="Post">
+			</form>
+
+			<div id="comments_title">Comments</div>
+			<div id="comments">
+			</div>
+			<div id="comments_footer">
+				<button id="prev_comments" class="btn">prev</button>
+				<button id="next_comments" class="btn">next</button>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+        <a href='./credits.html'>Credits</a>
+    </footer>
+
+</body>
+</html>

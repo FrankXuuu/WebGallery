@@ -1,0 +1,61 @@
+.small_btn {
+	padding: 5px 10px 5px 10px;
+	border: 1px solid black;
+	background: white;
+	color: black;
+
+}
+
+.small_btn:hover {
+	background: black;
+	color: white;
+}
+
+.image_container {
+	background: black;
+	border: 1px solid black;
+}
+
+#gallery img {
+	max-width: 998px;
+	max-height: 100%;
+	height: 575px;
+	display: block;
+	margin: 0 auto;
+}
+
+#gallery #under_photo {
+	margin: 8px 0px 16px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+#gallery #under_photo #caption {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#gallery #under_photo .btn {
+	align-self: center;
+}
+
+#gallery #under_photo #caption #author{
+	margin-top: 2px;
+	text-align: center;
+}
+
+#gallery #delete_btn {
+	display: block;
+	margin: 0 auto;
+	color: #800000;
+	background: white;
+	border: 1px solid #800000;
+}
+
+#gallery #delete_btn:hover {
+	color: white;
+	background: #800000;
+}
